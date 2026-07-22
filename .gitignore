@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Local editor / tooling — never publish these
+.claude/
+.vscode/
+
+# Dependencies (none today, ignored as a safeguard)
+node_modules/
+
+# Logs
+*.log

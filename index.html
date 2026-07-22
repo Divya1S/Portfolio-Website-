@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Divya S Rajput — Software · Full-Stack · AI Engineer</title>
+  <meta name="description" content="Divya S Rajput — software engineer building full-stack products, event-driven backends with provable guarantees, and real-time AI systems. MS Computer Science @ USC." />
+  <meta name="author" content="Divya S Rajput" />
+
+  <!-- PLACEHOLDER: replace with your deployed URL (e.g. https://divyarajput.netlify.app/) -->
+  <link rel="canonical" href="https://YOUR-SITE.netlify.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Divya S Rajput — Software · Full-Stack · AI Engineer" />
+  <meta property="og:description" content="Full-stack products, event-driven backends with provable guarantees, and real-time AI systems. MS Computer Science @ USC." />
+  <meta property="og:url" content="https://YOUR-SITE.netlify.app/" />
+  <!-- PLACEHOLDER: add a 1200x630 social preview image at assets/og-image.png -->
+  <meta property="og:image" content="https://YOUR-SITE.netlify.app/assets/og-image.png" />
+  <meta property="og:site_name" content="Divya S Rajput" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Divya S Rajput — Software · Full-Stack · AI Engineer" />
+  <meta name="twitter:description" content="Full-stack products, event-driven backends with provable guarantees, and real-time AI systems. MS Computer Science @ USC." />
+  <meta name="twitter:image" content="https://YOUR-SITE.netlify.app/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <meta name="theme-color" content="#faf9f7" />
+
+  <!-- Set theme before first paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+      // Reveal animations only hide content when JS is available to un-hide it
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Divya S Rajput",
+    "jobTitle": "Software Engineer · AI Engineer",
+    "worksFor": { "@type": "Organization", "name": "USC iLab" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Southern California" },
+      { "@type": "CollegeOrUniversity", "name": "Pimpri Chinchwad College of Engineering" }
+    ],
+    "email": "mailto:divya16sr@gmail.com",
+    "url": "https://YOUR-SITE.netlify.app/",
+    "sameAs": [
+      "https://github.com/Divya1S",
+      "https://www.linkedin.com/in/divya-rajput-5232131b0/",
+      "https://medium.com/@drajput_14416",
+      "https://leetcode.com/u/divya_rajput1611/",
+      "https://devpost.com/drajput"
+    ],
+    "knowsAbout": ["Machine Learning", "Computer Vision", "Large Language Models", "RAG", "Distributed Systems", "Full-Stack Development"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <nav class="nav-inner container" aria-label="Primary">
+      <a class="nav-brand" href="#home">Divya Rajput</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#hackathons">Hackathons</a></li>
+        <li><a href="#writing">Blogs</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark / light theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="hero-eyebrow reveal">
+          <span class="status-dot" aria-hidden="true"></span>
+          Divya S Rajput · Los Angeles · Open to Software, Full-Stack &amp; AI roles
+        </p>
+        <h1 class="hero-title reveal d-1">
+          I ship the whole stack<br /><em>and prove it works.</em>
+        </h1>
+        <p class="hero-lede reveal d-2">
+          From React front ends to exactly once Kafka backends to 25&nbsp;ms vision models,
+          I build products end to end and test them like they're already in production.
+          MS Computer Science, University of Southern California.
+        </p>
+        <div class="hero-cta reveal d-3">
+          <a class="btn" href="https://github.com/Divya1S" target="_blank" rel="noopener">View GitHub</a>
+          <a class="arrow-link no-ext" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <!-- Fact strip -->
+      <div class="container">
+        <dl class="facts reveal d-4">
+          <div class="fact">
+            <dt>Vision inference, smart glasses</dt>
+            <dd><span class="counter" data-count="25">25</span> ms</dd>
+          </div>
+          <div class="fact">
+            <dt>Sustained in ReNest load tests</dt>
+            <dd><span class="counter" data-count="1300" data-format="comma">1,300</span> req/s</dd>
+          </div>
+          <div class="fact">
+            <dt>Mutation-test strength, SeatSync CI</dt>
+            <dd><span class="counter" data-count="96">96</span>%</dd>
+          </div>
+          <div class="fact">
+            <dt>Users served at USC Price</dt>
+            <dd><span class="counter" data-count="20">20</span>K+</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container split">
+        <header class="section-label reveal">
+          <span class="section-num">01</span>
+          <h2>About</h2>
+        </header>
+
+        <div class="section-body">
+          <p class="lede reveal">
+            Hi, I'm Divya. I like building things that make it all the way
+            into people's hands.
+          </p>
+
+          <div class="about-columns">
+            <div class="about-copy reveal d-1">
+              <p>
+                I did my Master's in Computer Science at the <strong>University of Southern California</strong>,
+                and I work across the whole stack from the interface someone taps, to the services behind it,
+                to the models that make it smart. I'm happiest in the space where design, engineering, and
+                machine learning meet, and I care about the small details that separate something that just
+                demos well from something people can actually rely on.
+              </p>
+              <p>
+                Right now I'm a Research Assistant at <strong>USC iLab</strong>, building the real-time
+                perception stack for smart glasses that help blind and low-vision people navigate
+                independently object detection, segmentation, and depth estimation running in milliseconds on
+                a live camera feed. Hard, technical, and pointed at something that genuinely matters: exactly the
+                kind of problem I love.
+              </p>
+              <p>
+                Before this, I engineered accessible interfaces for 20,000 students and faculty at
+                <strong>USC's Sol Price School</strong>, and shipped Angular components and Python APIs as a
+                <strong>Software Engineer at Accenture</strong>. 
+                I also love the energy of <strong>hackathons</strong> the challenge of building ambitious ideas from scratch. During my master's at USC, I won multiple competitions. Along the way, my work has been recognized with a <strong>Best Master's Poster award from Google and PsychArmor,</strong> as well as wins at <strong>ACM Trojan Hacks and HackSC.</strong>
+              </p>
+              <!-- Want a warmer, more personal close? Swap the paragraph below for a line about your hobbies. -->
+              <!-- <p>
+                When I'm not building, you'll usually find me writing blogs on Medium, working
+                through a LeetCode problem, or sketching out the next side project. I'm always happiest with
+                something to make.
+              </p> -->
+            </div>
+
+            <aside class="about-aside reveal d-2">
+              <img src="assets/profile.jpg" alt="Illustrated portrait of Divya S Rajput" class="portrait" width="640" height="400" loading="lazy" />
+              <dl class="about-facts">
+                <div><dt>Currently</dt><dd>Research Assistant, USC iLab</dd></div>
+                <div><dt>Previously</dt><dd>USC Price · Accenture</dd></div>
+                <div><dt>Based in</dt><dd>Los Angeles, California</dd></div>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOOLKIT ============ -->
+    <section class="section" id="skills">
+      <div class="container split">
+        <header class="section-label reveal">
+          <span class="section-num">02</span>
+          <h2>Toolkit</h2>
+        </header>
+
+        <div class="section-body">
+          <dl class="spec-list">
+            <div class="spec-row reveal">
+              <dt>Programming</dt>
+              <dd>Python · C++ · Go · Java · TypeScript · JavaScript · R · SQL · HTML/CSS</dd>
+            </div>
+            <div class="spec-row reveal">
+              <dt>AI / ML</dt>
+              <dd>Machine learning · Computer vision · Vision transformers · Generative AI · LLMs · RAG · NLP · Multi-agent systems</dd>
+            </div>
+            <div class="spec-row reveal">
+              <dt>Frameworks</dt>
+              <dd>React · Next.js · Angular · FastAPI · Flask · Storybook · Tailwind CSS</dd>
+            </div>
+            <div class="spec-row reveal">
+              <dt>Cloud &amp; infrastructure</dt>
+              <dd>AWS (EC2, S3, Lambda, RDS, Bedrock) · Azure · Docker · Kubernetes · Kafka · Prometheus · Grafana</dd>
+            </div>
+            <div class="spec-row reveal">
+              <dt>Databases</dt>
+              <dd>PostgreSQL · MySQL · MongoDB · Redis · pgvector · Pinecone · ChromaDB · Neo4j · Amazon Aurora · Amazon Neptune</dd>
+            </div>
+            <div class="spec-row reveal">
+              <dt>Developer tools</dt>
+              <dd>Git · GitHub Actions · CI/CD · Jasmine &amp; Karma · k6 · Power BI</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container split">
+        <header class="section-label reveal">
+          <span class="section-num">03</span>
+          <h2>Experience</h2>
+        </header>
+
+        <div class="section-body">
+          <article class="job reveal">
+            <div class="job-when">Dec 2025 — Present</div>
+            <div class="job-what">
+              <h3>Research Assistant</h3>
+              <p class="job-org">iLab Smart Glasses Project, USC</p>
+              <ul class="job-points">
+                <li>Built a real-time object-detection and instance-segmentation pipeline for blind/low-vision smart glasses 25&nbsp;ms inference at 30 FPS for reliable obstacle detection within a SLAM based navigation system.</li>
+                <li>Integrated a monocular depth estimation module (AbsRel 0.10) into the perception stack, delivering real-time spatial awareness for obstacle avoidance and independent mobility.</li>
+              </ul>
+              <p class="job-meta">Computer vision · Instance segmentation · Depth estimation · SLAM</p>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <div class="job-when">Aug 2025 — May 2026</div>
+            <div class="job-what">
+              <h3>Front-End Developer</h3>
+              <p class="job-org">USC Sol Price School of Public Policy</p>
+              <ul class="job-points">
+                <li>Engineered high-performance web interfaces with React, TypeScript, and Next.js improved page load times and achieved WCAG 2.1 AA compliance for 20K students and faculty.</li>
+                <li>Implemented modular design systems and CI/CD pipelines with Tailwind CSS, Storybook, and GitHub Actions, cutting UI development overhead and enabling consistent deployment of policy research tools and dashboards.</li>
+              </ul>
+              <p class="job-meta">React · TypeScript · Next.js · Accessibility · CI/CD</p>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <div class="job-when">Jun 2023 — Jun 2024</div>
+            <div class="job-what">
+              <h3>Software Engineer</h3>
+              <p class="job-org">Accenture, Mumbai</p>
+              <ul class="job-points">
+                <li>Built 10+ reusable Angular components and 15+ features for an enterprise client web portal, unit-tested to 75% coverage with Jasmine and Karma reducing new-screen development time.</li>
+                <li>Developed 6+ FastAPI REST endpoints over MySQL on Amazon RDS, integrating 3 third-party services with retry logic and structured error handling removed 5 hours/week of manual reconciliation.</li>
+              </ul>
+              <p class="job-meta">Angular · FastAPI · MySQL · Amazon RDS</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="section" id="work">
+      <div class="container split">
+        <header class="section-label reveal">
+          <span class="section-num">04</span>
+          <h2>Projects</h2>
+        </header>
+
+        <div class="section-body">
+
+          <!-- Case study: SeatSync -->
+          <article class="case reveal">
+            <p class="case-eyebrow">Case study · Sep 2025 — Jun 2026</p>
+            <h3 class="case-title">SeatSync</h3>
+            <p class="case-sub">An event-driven booking platform where zero oversells is a test result, not a promise.</p>
+
+            <figure class="case-cover">
+              <img src="assets/seatsync.jpg" alt="Illustration of SeatSync's event-driven booking flow: a selected seat travels through an ordered message pipeline, with a retry loop, to a confirmed ticket" class="case-img" width="1700" height="350" loading="lazy" />
+            </figure>
+
+            <div class="case-grid">
+              <div class="case-main">
+                <h4>Problem</h4>
+                <p>
+                  Booking systems fail in the worst possible way: two people buy the same seat under
+                  concurrent load, and duplicate events under retries corrupt state. Correctness claims
+                  mean nothing unless they survive race conditions, broker outages, and deliberate chaos.
+                </p>
+
+                <h4>Approach</h4>
+                <p>
+                  Event-driven microservices in Java 21 and Spring Boot on Kafka, Redis, and PostgreSQL,
+                  with an Angular front end. Exactly-once delivery comes from a transactional outbox,
+                  idempotent consumers, retry/dead-letter topics, and Idempotency-Key replay bookings
+                  confirm in 70&nbsp;ms even with Kafka down. CI gates the lot: Pact contract tests on
+                  every service boundary, PIT mutation testing, ArchUnit rules, JaCoCo ratchets, and a
+                  250-test Toxiproxy chaos suite.
+                </p>
+
+                <figure class="sketch" aria-label="SeatSync event flow">
+                  <div class="sketch-flow">
+                    <span class="sk-node">Client</span>
+                    <span class="sk-arrow" aria-hidden="true">→</span>
+                    <span class="sk-node sk-hub">Booking service<small>outbox · idempotency-key</small></span>
+                    <span class="sk-arrow" aria-hidden="true">→</span>
+                    <span class="sk-node">Kafka</span>
+                    <span class="sk-arrow" aria-hidden="true">→</span>
+                    <span class="sk-stack">
+                      <span class="sk-node">Idempotent consumers</span>
+                      <span class="sk-node">Retry / DLQ topics</span>
+                    </span>
+                  </div>
+                  <figcaption>The transactional outbox keeps the database and Kafka in agreement, so replays are safe by construction.</figcaption>
+                </figure>
+              </div>
+
+              <aside class="case-aside">
+                <dl class="case-facts">
+                  <div><dt>Stack</dt><dd>Java 21 · Spring Boot · Kafka · Redis · PostgreSQL · Angular</dd></div>
+                  <div><dt>Code</dt><dd><a class="arrow-link" href="https://github.com/Divya1S/SeatSync" target="_blank" rel="noopener">GitHub</a></dd></div>
+                </dl>
+                <ul class="case-metrics">
+                  <li><strong>0</strong><span>seat oversells under 60-thread race tests</span></li>
+                  <li><strong>70 ms</strong><span>booking confirmation, even with Kafka down</span></li>
+                  <li><strong>96%</strong><span>PIT mutation-test strength</span></li>
+                  <li><strong>250</strong><span>tests in the Toxiproxy chaos suite</span></li>
+                </ul>
+              </aside>
+            </div>
+          </article>
+
+          <!-- Case study: ReNest -->
+          <article class="case reveal">
+            <p class="case-eyebrow">Case study · Sep 2024 — Jun 2025</p>
+            <h3 class="case-title">ReNest</h3>
+            <p class="case-sub">A full-stack marketplace whose agentic AI turns a room photo into a ready-to-post listing, giving dorm goods a second life between students instead of the landfill.</p>
+
+            <figure class="case-cover">
+              <img src="assets/renest.jpg" alt="Illustration of ReNest: a dorm room is scanned by phone into a listing card, then handed off between two students with an AI assistant coordinating" class="case-img" width="1700" height="300" loading="lazy" />
+            </figure>
+
+            <div class="case-grid">
+              <div class="case-main">
+                <h4>Problem</h4>
+                <p>
+                  Campus marketplaces need trust mechanics, reservations, verified handoffs, honest
+                  listings and any AI feature has to stay useful when the model provider rate-limits,
+                  times out, or returns nonsense.
+                </p>
+
+                <h4>Approach</h4>
+                <p>
+                  A marketplace spanning 135 REST endpoints and 36 React pages on Django REST, PostgreSQL,
+                  and Celery/Redis: listings, reservations, PIN-verified handoffs, and AI-assisted room
+                  scans that turn a photo into a publishable listing. The Gemini-powered concierge uses
+                  semantic request routing, embedding-based response caching, and a Plan–Execute–Reflect
+                  agent loop; circuit breakers, quota-aware model fallbacks, and a 22-case golden-set eval
+                  suite keep it degrading gracefully when the provider doesn't.
+                </p>
+
+                <figure class="sketch" aria-label="ReNest AI concierge flow">
+                  <div class="sketch-flow">
+                    <span class="sk-node">Request</span>
+                    <span class="sk-arrow" aria-hidden="true">→</span>
+                    <span class="sk-node sk-hub">AI concierge<small>route · cache · reflect</small></span>
+                    <span class="sk-arrow" aria-hidden="true">→</span>
+                    <span class="sk-stack">
+                      <span class="sk-node">Google Gemini</span>
+                      <span class="sk-node">Quota-aware fallbacks</span>
+                    </span>
+                  </div>
+                  <figcaption>Circuit breakers route around provider failures; the golden-set eval suite keeps answers honest.</figcaption>
+                </figure>
+              </div>
+
+              <aside class="case-aside">
+                <dl class="case-facts">
+                  <div><dt>Stack</dt><dd>Django REST · PostgreSQL · React · Celery · Redis · Google Gemini</dd></div>
+                  <div><dt>Code</dt><dd><a class="arrow-link" href="https://github.com/Divya1S/ReNest" target="_blank" rel="noopener">GitHub</a></dd></div>
+                </dl>
+                <ul class="case-metrics">
+                  <li><strong>1,300</strong><span>req/s sustained in load tests</span></li>
+                  <li><strong>135</strong><span>REST endpoints · 36 React pages</span></li>
+                  <li><strong>330+</strong><span>automated tests Playwright, Vitest, Django</span></li>
+                  <li><strong>22</strong><span>golden-set eval cases for the concierge</span></li>
+                </ul>
+              </aside>
+            </div>
+          </article>
+
+          <!-- Other projects -->
+          <div class="project-list">
+            <h3 class="project-list-title reveal">Also building</h3>
+
+            <a class="project-row reveal" href="https://github.com/Divya1S/trojanHacks" target="_blank" rel="noopener">
+              <div>
+                <h4>InsightForge <span class="tag tag-award">Winner · ACM Trojan Hacks 2026</span></h4>
+                <p>AI powered ad creative optimization using Voice-of-Customer analysis, NLP, and generative AI. Best Use of Presaige API.</p>
+                <p class="project-meta">NLP · Generative AI · Presaige API</p>
+              </div>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="project-row reveal" href="https://github.com/Divya1S/CarePilot" target="_blank" rel="noopener">
+              <div>
+                <h4>CarePilot <span class="tag">In development</span></h4>
+                <p>Multi-agent care coordination ingests health documents and resolves medication conflicts.</p>
+                <p class="project-meta">Python · FastAPI · SQLite · Multi-agent</p>
+              </div>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="project-row reveal" href="https://github.com/Divya1S/minigpt-jax-GeminiStack" target="_blank" rel="noopener">
+              <div>
+                <h4>MiniGPT-JAX</h4>
+                <p>A 20M-parameter GPT-style language model built from scratch in JAX tokenization, transformer blocks, and the full training loop.</p>
+                <p class="project-meta">JAX · Python · Transformers</p>
+              </div>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="project-row reveal" href="https://github.com/Divya1S/Agentic-API-Discovery-with-Knowledge-Graphs" target="_blank" rel="noopener">
+              <div>
+                <h4>Agentic API Discovery</h4>
+                <p>Transforms API specifications into a knowledge graph, enabling semantic, agent driven API discovery.</p>
+                <p class="project-meta">Python · Knowledge graphs · LLM agents</p>
+              </div>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="section" id="research">
+      <div class="container split">
+        <header class="section-label reveal">
+          <span class="section-num">05</span>
+          <h2>Research</h2>
+        </header>
+
+        <div class="section-body">
+          <article class="research-item reveal">
+            <p class="research-status">Ongoing · USC iLab</p>
+            <h3>Real-time perception for assistive smart glasses</h3>
+            <p>
+              Building the perception stack for smart glasses that help blind and low-vision users navigate
+              independently. The pipeline runs object detection and instance segmentation at 25&nbsp;ms
+              inference and 30 FPS inside a SLAM-based navigation system, with a monocular depth-estimation
+              module (AbsRel 0.10) providing real-time spatial awareness for obstacle avoidance.
+            </p>
+            <p class="research-meta">Object detection · Instance segmentation · Monocular depth · SLAM · Edge inference</p>
+          </article>
+
+          <article class="research-item reveal">
+            <p class="research-status">Best Master's Poster · ShowCAIS 2025</p>
+            <h3>VisionMate: Assistive Vision Research</h3>
+            <p>
+              Enhanced VisionMate research presented at ShowCAIS 2025, recognized with the Best Master's
+              Student Poster Presentation award by Google and PsychArmor — selected as the top poster among
+              all master's student entries.
+            </p>
+            <p class="research-meta">Assistive technology · Computer vision · Applied research</p>
+          </article>
+
+          <h3 class="sub-heading reveal">Publications</h3>
+
+          <article class="research-item reveal">
+            <p class="research-status">First author · Springer · 2023</p>
+            <h3>Plant Quality Assessment and Disease Identification System Using AI</h3>
+            <p><strong>Divya Rajput</strong>, Hiral Rane, Janhavi Wagh, Devika Nikam, Roshani Raut, Anuja Jadhav</p>
+            <p class="research-meta">Proceedings of the 3rd International Conference on Recent Trends in Machine Learning, IoT, Smart Cities and Applications · Lecture Notes in Networks and Systems · pp. 667–675</p>
+            <p><a class="arrow-link" href="https://link.springer.com/chapter/10.1007/978-981-19-6088-8_62" target="_blank" rel="noopener">Read on Springer</a></p>
+          </article>
+
+          <article class="research-item reveal">
+            <p class="research-status">First author · Springer · 2023</p>
+            <h3>Detection and Classification of Dental Caries Using Deep and Transfer Learning</h3>
+            <p><strong>Divya Rajput</strong>, Hiral Rane, Devika Nikam, Janhavi Wagh, Anuja Jadhav</p>
+            <p class="research-meta">Computational Intelligence in Pattern Recognition · Lecture Notes in Networks and Systems · pp. 27–38</p>
+            <p><a class="arrow-link" href="https://link.springer.com/chapter/10.1007/978-981-99-3734-9_3" target="_blank" rel="noopener">Read on Springer</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HACKATHONS ============ -->
+    <section class="section" id="hackathons">
+      <div class="container split">
+        <header class="section-label reveal">
+          <span class="section-num">06</span>
+          <h2>Hackathons</h2>
+        </header>
+
+        <div class="section-body">
+          <p class="section-intro reveal">
+            Five hackathons, two wins. All on
+            <a class="inline-link" href="https://devpost.com/drajput" target="_blank" rel="noopener">Devpost</a>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Gallery breaks out of the split column to use the full container width -->
+      <div class="container">
+        <div class="hack-grid">
+            <a class="hack-card reveal" href="https://devpost.com/software/visionmate-fzq6xy" target="_blank" rel="noopener">
+              <img src="assets/visionmate.jpg" alt="Illustration of VisionMate: smart glasses detect and guide a dotted path to a vacant chair highlighted among rows of seats" class="hack-img" width="1000" height="300" loading="lazy" />
+              <p class="hack-status is-win">Winner · Accessibility SoCal Tech Week 2024</p>
+              <h3>VisionMate</h3>
+              <p class="hack-desc">
+                A "friendly pair of eyes" for blind and low-vision users real-time computer vision
+                that finds vacant seats and guides indoor navigation without pre-mapped spaces.
+                Later grew into the ShowCAIS 2025 award winning research.
+              </p>
+              <p class="hack-meta">Python · OpenCV · YOLO · SAM 2 · Transformers</p>
+              <span class="hack-link">View on Devpost <span aria-hidden="true">↗</span></span>
+            </a>
+
+            <a class="hack-card reveal d-1" href="https://devpost.com/software/voiceforge" target="_blank" rel="noopener">
+              <img src="assets/insightforge.jpg" alt="Illustration of InsightForge: speech bubbles are forged on an anvil into a finished ad creative with a high score dial" class="hack-img" width="1000" height="300" loading="lazy" />
+              <p class="hack-status is-win">Winner · Best Use of Presaige API ACM Trojan Hacks 2026</p>
+              <h3>InsightForge</h3>
+              <p class="hack-desc">
+                Ad campaigns designed from customer voice before launch scrapes product reviews,
+                extracts Voice-of-Customer insights with NLP, and generates scored, conversion ready
+                ad creative.
+              </p>
+              <p class="hack-meta">FastAPI · React · Google Gemini · Presaige API</p>
+              <span class="hack-link">View on Devpost <span aria-hidden="true">↗</span></span>
+            </a>
+
+            <a class="hack-card reveal d-2" href="https://devpost.com/software/winner-jcq1td" target="_blank" rel="noopener">
+              <img src="assets/karuna.jpg" alt="Illustration of Karuna: a friendly clay-colored pet creature sits beside a phone showing a completed checklist on a cozy desk" class="hack-img" width="1000" height="300" loading="lazy" />
+              <p class="hack-status">LA Hacks 2026</p>
+              <h3>Karuna</h3>
+              <p class="hack-desc">
+                An emotionally intelligent AI pet companion for productivity talk through blockers,
+                celebrate wins, and watch progress reshape your companion's world. Built native in
+                SwiftUI with Gemma via Zetic MLange.
+              </p>
+              <p class="hack-meta">Swift · SwiftUI · Gemma · Zetic MLange</p>
+              <span class="hack-link">View on Devpost <span aria-hidden="true">↗</span></span>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WRITING ============ -->
+    <section class="section" id="writing">
+      <div class="container split">
+        <header class="section-label reveal">
+          <span class="section-num">07</span>
+          <h2>Blogs</h2>
+        </header>
+
+        <div class="section-body">
+          <p class="section-intro reveal">
+            Blogs on system design, distributed systems, and software architecture and operating system published on
+            <a class="inline-link" href="https://medium.com/@drajput_14416" target="_blank" rel="noopener">Medium</a>.
+          </p>
+
+          <div class="post-list">
+            <a class="post-row reveal" href="https://medium.com/@drajput_14416/hexagonal-onion-clean-architecture-ef4dad926a85" target="_blank" rel="noopener">
+              <span class="post-title">Hexagonal, Onion &amp; Clean Architecture</span>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="post-row reveal" href="https://medium.com/@drajput_14416/event-driven-architecture-cqrs-event-sourcing-sagas-f2743ce8ddb7" target="_blank" rel="noopener">
+              <span class="post-title">Event-Driven Architecture, CQRS, Event Sourcing &amp; Sagas</span>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="post-row reveal" href="https://medium.com/@drajput_14416/n-tier-architecture-the-bff-pattern-4f94387f8481" target="_blank" rel="noopener">
+              <span class="post-title">N-Tier Architecture &amp; the BFF Pattern</span>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="post-row reveal" href="https://medium.com/@drajput_14416/scaling-up-vs-scaling-out-392c03df6119" target="_blank" rel="noopener">
+              <span class="post-title">Scaling Up vs Scaling Out</span>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="post-row reveal" href="https://medium.com/@drajput_14416/serverless-faas-05d6cac35e09" target="_blank" rel="noopener">
+              <span class="post-title">Serverless &amp; FaaS</span>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="post-row reveal" href="https://medium.com/@drajput_14416/stop-building-microservices-why-your-app-actually-needs-one-big-kitchen-b96592d759b1" target="_blank" rel="noopener">
+              <span class="post-title">Stop Building Microservices: Why Your App Actually Needs "One Big Kitchen"</span>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="post-row reveal" href="https://medium.com/@drajput_14416/why-the-just-scale-it-lie-is-costing-your-team-thousands-46560d0bc76c" target="_blank" rel="noopener">
+              <span class="post-title">Why the "Just Scale It" Lie Is Costing Your Team Thousands</span>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="post-row reveal" href="https://medium.com/@drajput_14416/i-finally-understood-system-architecture-and-all-it-took-was-a-cheeseburger-d4d39f98e34a" target="_blank" rel="noopener">
+              <span class="post-title">I Finally Understood System Architecture, and All It Took Was a Cheeseburger</span>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="post-row reveal" href="https://medium.com/@drajput_14416/the-secret-formula-thats-quietly-crashing-your-servers-little-s-law-9c0f010966f5" target="_blank" rel="noopener">
+              <span class="post-title">The Secret Formula That's Quietly Crashing Your Servers: Little's Law</span>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="post-row reveal" href="https://medium.com/@drajput_14416/the-1-in-100-server-glitch-that-secretly-poisons-your-entire-app-ddaa59190fb4" target="_blank" rel="noopener">
+              <span class="post-title">The "1-in-100" Server Glitch That Secretly Poisons Your Entire App</span>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <p class="repo-more reveal">
+            <a class="arrow-link" href="https://medium.com/@drajput_14416" target="_blank" rel="noopener">Read all on Medium</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BACKGROUND: EDUCATION & RECOGNITION ============ -->
+    <section class="section" id="education">
+      <div class="container split">
+        <header class="section-label reveal">
+          <span class="section-num">08</span>
+          <h2>Background</h2>
+        </header>
+
+        <div class="section-body background-grid">
+          <div class="background-col reveal">
+            <h3 class="background-heading">Education</h3>
+            <div class="edu-item">
+              <h4>University of Southern California</h4>
+              <p>Master of Science, Computer Science</p>
+              <p class="edu-meta">Aug 2024 - May 2026 · Los Angeles</p>
+            </div>
+            <div class="edu-item">
+              <h4>Pimpri Chinchwad College of Engineering</h4>
+              <p>B.E. Information Technology, Honours in Data Science</p>
+              <p class="edu-meta">Jul 2019 — Apr 2023 · Pune, India</p>
+            </div>
+          </div>
+
+          <div class="background-col reveal d-1" id="achievements">
+            <h3 class="background-heading">Recognition</h3>
+            <ol class="award-list">
+              <li>
+                <h4>Winner, ACM Trojan Hacks 2026</h4>
+                <p>Best Use of Presaige API for InsightForge, an AI-powered ad-creative optimization platform.</p>
+              </li>
+              <li>
+                <h4>Best Master's Poster, ShowCAIS 2025</h4>
+                <p>Awarded by Google and PsychArmor for the enhanced VisionMate research.</p>
+              </li>
+              <li>
+                <h4>Winner, HackSC SoCal Tech Week 2024</h4>
+                <p>Digital Accessibility Track, sponsored by Capital Group, for <strong>VisionMate</strong>.</p>
+              </li>
+              <li>
+                <h4>Open source &amp; practice</h4>
+                <p>56 public repositories and the GitHub Pull Shark badge; Problems solved on <a class="inline-link" href="https://leetcode.com/u/divya_rajput1611/" target="_blank" rel="noopener">LeetCode</a></p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GITHUB ============ -->
+    <section class="section" id="github">
+      <div class="container split">
+        <header class="section-label reveal">
+          <span class="section-num">09</span>
+          <h2>GitHub</h2>
+        </header>
+
+        <div class="section-body">
+          <p class="section-intro reveal">
+            Curated from my <a class="inline-link" href="https://github.com/Divya1S" target="_blank" rel="noopener">Repositories</a> hands-on work across agents, MCP, RAG, fine-tuning, inference optimization, and computer vision.
+          </p>
+
+          <div class="repo-tabs reveal" role="group" aria-label="Filter repositories">
+            <button class="tab is-active" data-filter="all">All</button>
+            <button class="tab" data-filter="agents">Agents</button>
+            <button class="tab" data-filter="llm">LLM · RAG · MCP</button>
+            <button class="tab" data-filter="ml">ML · CV · Inference</button>
+            <button class="tab" data-filter="web">Web</button>
+          </div>
+
+          <!-- Cards rendered by script.js from the REPOS data array -->
+          <div class="repo-grid" id="repo-grid" aria-live="polite"></div>
+
+          <p class="repo-more reveal">
+            <a class="arrow-link" href="https://github.com/Divya1S?tab=repositories" target="_blank" rel="noopener">View all repositories</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <p class="contact-eyebrow reveal"><span class="section-num">10</span> Contact</p>
+        <h2 class="contact-title reveal d-1">Let's build something<br /><em>that matters.</em></h2>
+        <p class="contact-sub reveal d-2">
+          Open to software engineering, full-stack, AI/ML and Agentic roles. Email is fastest, I reply within a day.
+        </p>
+        <p class="contact-email reveal d-3">
+          <a href="mailto:divya16sr@gmail.com">divya16sr@gmail.com</a>
+        </p>
+        <ul class="contact-links reveal d-4" aria-label="Other ways to connect">
+          <li><a class="arrow-link" href="https://www.linkedin.com/in/divya-rajput-5232131b0/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a class="arrow-link" href="https://github.com/Divya1S" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="arrow-link" href="https://medium.com/@drajput_14416" target="_blank" rel="noopener">Medium</a></li>
+          <li><a class="arrow-link" href="https://leetcode.com/u/divya_rajput1611/" target="_blank" rel="noopener">LeetCode</a></li>
+          <li><a class="arrow-link" href="https://devpost.com/drajput" target="_blank" rel="noopener">Devpost</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Divya S Rajput</p>
+      <p class="footer-note">Hand-built with HTML, CSS &amp; JavaScript.</p>
+      <a class="footer-top" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
